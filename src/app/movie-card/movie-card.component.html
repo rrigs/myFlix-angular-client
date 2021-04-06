@@ -1,3 +1,4 @@
+<app-nav-bar></app-nav-bar>
 <div style="display: flex;">
     <mat-card *ngFor="let movie of movies;" style="flex: 1 1 auto;">
         <mat-card-header>
@@ -15,7 +16,15 @@
             <button mat-button color="primary">
                 Description
             </button>
-            <mat-icon>favorite_border</mat-icon>
+            <div class="favorite">
+                <button class="favorite-button" mat-icon-button
+                    (click)="addFavorite(movie._id, movie.Title)" color="warn"
+                    aria-label="Add movie to favorites button">
+                    <mat-icon>
+                        favorite_border
+                    </mat-icon>
+                </button>
+            </div>
         </mat-card-actions>
     </mat-card>
 </div>

@@ -58,19 +58,19 @@ export class UserProfileComponent implements OnInit {
     return this.favorites;
   }
 
-// //Removes movie from user's favorites
-//   removeFromFavorites(id: string, title: string): void {
-//     this.fetchApiData3.deleteFavoriteMovie(id).subscribe(() => {
-//       this.snackBar.open(
-//         `${title} has been removed from your Favorites`, 'OK', {
-//           duration: 2000,
-//         }
-//       );
-//       setTimeout(function() {
-//         window.location.reload();
-//       }, 1000);
-//     });
-//   }
+//Removes movie from user's favorites
+  removeFromFavorites(id: string, title: string): void {
+    this.fetchApiData3.deleteFavoriteMovie().subscribe(() => {
+      this.snackBar.open(
+        `${title} has been removed from your Favorites`, 'OK', {
+          duration: 2000,
+        }
+      );
+      setTimeout(function() {
+        window.location.reload();
+      }, 1000);
+    });
+  }
 
 //Opens the dialog box where the user can update their information
   openUpdateProfileDialog(): void {

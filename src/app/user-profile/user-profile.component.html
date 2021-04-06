@@ -1,5 +1,5 @@
+<app-nav-bar></app-nav-bar>
 <div class="body">
-
     <div class="user-profile">
         <mat-card class="profile-info">
             <mat-card-header>
@@ -22,10 +22,12 @@
             </mat-card-content>
             <mat-card-actions>
                 <div class="profile-buttons">
-                    <button class="update-profile" mat-raised-button color="basic" (click)="openUpdateProfileDialog()">
+                    <button class="update-profile" mat-raised-button
+                        color="basic" (click)="openUpdateProfileDialog()">
                         Update Profile
                     </button>
-                    <button class="delete-profile" mat-raised-button color="warn" (click)="deleteProfile()">
+                    <button class="delete-profile" mat-raised-button
+                        color="warn" (click)="deleteProfile()">
                         Delete Profile
                     </button>
                 </div>
@@ -43,10 +45,10 @@
                     <mat-card-title>{{favorite.Title}}</mat-card-title>
                 </div>
                 <div class="remove-favorite">
-                    <!-- <button class="remove-button" mat-button color="basic"
+                    <button class="remove-button" mat-button color="basic"
                         (click)="removeFromFavorites(favorite._id, favorite.Title)">
                         Remove From favorites
-                    </button> -->
+                    </button>
                 </div>
             </mat-card>
         </div>

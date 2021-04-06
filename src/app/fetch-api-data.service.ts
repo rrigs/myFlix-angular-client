@@ -349,7 +349,7 @@ export class EditUserService {
   constructor(private http: HttpClient) { }
 
 //Making the api call to edit user information
-  updateUser(userDetails: any): Observable<any> {
+  editUser(userDetails: any): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
     return this.http.put(apiUrl + 'users/:Username', userDetails, {headers: new HttpHeaders(
