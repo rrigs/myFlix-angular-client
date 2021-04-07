@@ -20,6 +20,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UpdateProfileComponent } from './update-profile/update-profile.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DirectorDialogComponent } from './director-dialog/director-dialog.component';
+import { GenreDialogComponent } from './genre-dialog/genre-dialog.component';
+import { DetailsDialogComponent } from './details-dialog/details-dialog.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
@@ -37,7 +40,10 @@ const appRoutes: Routes = [
     WelcomePageComponent,
     UserProfileComponent,
     UpdateProfileComponent,
-    NavBarComponent
+    NavBarComponent,
+    DirectorDialogComponent,
+    GenreDialogComponent,
+    DetailsDialogComponent
   ],
   imports: [
     BrowserModule,
