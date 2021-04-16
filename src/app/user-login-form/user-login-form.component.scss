@@ -1,0 +1,19 @@
+.login-card {
+  background-color: #e5e5e5;
+  border: 1px solid black;
+}
+
+.close-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: absolute;
+  top: -5px;
+  right: 1px;
+}
+
+.sign-in-button {
+  margin-top: 5px;
+  border: 1px solid black;
+  width: 100px;
+}

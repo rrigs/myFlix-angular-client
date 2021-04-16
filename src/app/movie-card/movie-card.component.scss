@@ -1,0 +1,78 @@
+.background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mat-card {
+  background-color: #e5e5e5;
+  border: 1px solid black;
+  margin: 20px;
+  width: 300px;
+  justify-content: center;
+}
+
+.movie-title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.movie-subtitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  display: block;
+  width: 275px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.favorite-button {
+  border: 1px solid black;
+  background-color: #7e0000;
+}
+
+.genre-button {
+  margin-top: 5px;
+  border: 1px solid black;
+  width: 100px;
+}
+
+.director-button {
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+.info-button {
+  margin-top: 5px;
+  border: 1px solid black;
+  width: 100px;
+}

@@ -1,0 +1,28 @@
+#navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #7e0000;
+}
+
+.app-title {
+  font-size: 23px;
+  color: #7e0000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  border: 1px solid black;
+}
+
+button {
+  margin-top: 5px;
+  border: 1px solid black;
+  width: 100px;
+}

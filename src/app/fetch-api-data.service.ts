@@ -312,7 +312,7 @@ export class AddFavoriteMovieService {
   addFavoriteMovie(id: string): Observable<any> {
     const token = localStorage.getItem('token');
     const user = localStorage.getItem('user');
-    return this.http.post(apiUrl + 'users/:Username/:FavoriteMovies/:MovieID', id, {headers: new HttpHeaders(
+    return this.http.post(apiUrl + 'users/:Username/movies/:MovieID', id, {headers: new HttpHeaders(
       {
         Authorization: 'Bearer ' + token,
       })
