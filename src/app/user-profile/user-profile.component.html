@@ -34,12 +34,12 @@
       </mat-card-actions>
     </mat-card>
   </div>
+  <div class="title-container">
+    <mat-card-title class="title">Your Favorite Movies:</mat-card-title>
+  </div>
   <div class="favorites-container">
-    <div class="title-container">
-      <mat-card-title class="title">Your Favorite Movies:</mat-card-title>
-    </div>
     <div class="favorite-cards">
-      <mat-card class="favorite" *ngFor="let favorite of favorites">
+      <mat-card *ngFor="let favorite of favorites" style="flex: 1 1 auto">
         <img src="{{ favorite.ImagePath }}" alt="{{ favorite.Title }}" />
         <div class="favorite-title">
           <mat-card-title>{{ favorite.Title }}</mat-card-title>
@@ -47,8 +47,8 @@
         <div class="remove-favorite">
           <button
             class="remove-button"
-            mat-button
-            color="basic"
+            mat-raised-button
+            color="warn"
             (click)="removeFromFavorites(favorite._id, favorite.Title)"
           >
             Remove From favorites
