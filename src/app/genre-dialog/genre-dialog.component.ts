@@ -1,6 +1,10 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
+/**
+ * The genre-dialog component shows the genre type and a short description of said genre.
+ */
+
 @Component({
   selector: 'app-genre-dialog',
   templateUrl: './genre-dialog.component.html',

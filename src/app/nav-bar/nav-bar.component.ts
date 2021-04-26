@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
+/**
+ * The nav-bar component provides the main navigation for the app with links to view the profile page, return to the main movies view, or logout.
+ */
+
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -17,7 +21,9 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-//Logs the user out, removes their data from local storage, and returns them to the welcome view/login screen
+/**
+ * Logs the user out, removes their data from local storage, and returns them to the welcome view/login screen
+ */
   logoutUser(): void {
     localStorage.clear();
     this.router.navigate(['welcome']);

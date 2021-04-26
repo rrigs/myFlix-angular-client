@@ -1,6 +1,10 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
+/**
+ * The details-dialog component shows all details about a specific movie including the title, movie poster image, synopsis, director, and genre.
+ */
+
 @Component({
   selector: 'app-details-dialog',
   templateUrl: './details-dialog.component.html',
