@@ -22,10 +22,13 @@ Check out the code for the myFlix API [HERE](https://github.com/rrigs/myFlix-API
 ## Key Features:
 
 - **Welcome view** where existing users can **login** and new users can **register**
-- Once authenticated, user will be taken to an **all movies view**
+- Once authenticated, user will be taken to an **all movies view** with the following features:
+  - Button to **log out**
+  - Button that takes user to **profile view** where profile information can be viewed and updated or deleted
 - After clicking on specific movie, user will be taken to **single movie view** with more details about the movie and the following features:
   - Button that takes user to **director view**
   - Button that takes user to **genre view**
+  - Button that adds movie to users list of **favorites**
 
 ## Development server
 
