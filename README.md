@@ -1,6 +1,31 @@
-# MyFlixAngularClient
+# myFlix Client-Side Angular App
+
+## Overview
+
+The objective for this last project from my online web development course was to use Angular to build the client-side for an app called myFlix based on existing server-side code, with supporting documentation.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+
+### View it live [HERE](https://rrigs.github.io/myFlix-angular-client/welcome)
+
+Check out the code for the myFlix API [HERE](https://github.com/rrigs/myFlix-API)
+
+## Technologies:
+
+- Angular
+- TypeScript
+- node.js
+- npm
+- Angular Material
+- TypeDoc
+
+## Key Features:
+
+- **Welcome view** where existing users can **login** and new users can **register**
+- Once authenticated, user will be taken to an **all movies view**
+- After clicking on specific movie, user will be taken to **single movie view** with more details about the movie and the following features:
+  - Button that takes user to **director view**
+  - Button that takes user to **genre view**
 
 ## Development server
 
@@ -21,7 +46,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
